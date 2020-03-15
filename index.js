@@ -5,6 +5,17 @@ function oneReq(token,aurl){
     return axios.post('https://api.tinify.com/shrink',{source: {url: aurl}},{auth: {username: 'api', password: token }})
 }
 
+function downOne(token, turl) {
+    return axios.get(turl, { auth: { username: 'api', password: token } })
+}
+
+function getBuf(token,urllist){
+    var returnbuf=[];
+    for (var i = 0; i < urllist.length; i++) {
+        downOne(token,urllist[i])
+    }
+}
+
 var tinypnga = function(token,files)
 {
     return new Promise((resolve,reject) => {
@@ -13,7 +24,13 @@ var tinypnga = function(token,files)
             reqlist.push(oneReq(token,files[i]))
         }
         Promise.all(reqlist)
-        .then((res)=>console.log(res[0].data))
+        .then((res)=>{
+            let reslist = []
+            for (var i = 0; i < files.length; i++){
+                reslist.push(res[i].data.output.url)
+            }
+            console.log(reslist)
+        })
         .catch(e=>console.log(e));
     })
 }
