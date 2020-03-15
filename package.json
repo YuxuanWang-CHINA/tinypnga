@@ -18,5 +18,8 @@
   "homepage": "https://github.com/YuxuanWang-CHINA/tinypnga#readme",
   "dependencies": {
     "axios": "^0.19.2"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
   }
 }
