@@ -1,0 +1,19 @@
+{
+  "name": "tinypnga",
+  "version": "1.0.0",
+  "description": "A cilent for tinypng.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuxuanWang-CHINA/tinypnga.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YuxuanWang-CHINA/tinypnga/issues"
+  },
+  "homepage": "https://github.com/YuxuanWang-CHINA/tinypnga#readme"
+}
