@@ -21,7 +21,8 @@ function getBuf(token,urllist){
             for (let i=0;i<res.length;i++ ){
                 re.push(res[i].data)
             }
-            resolve(re)
+            console.log(re)
+            return resolve(re)
         })
         .catch(e=>console.log(e))
     })
