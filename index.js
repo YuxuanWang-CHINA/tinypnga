@@ -21,7 +21,7 @@ function getBuf(token,urllist){
             for (let i=0;i<res.length;i++ ){
                 re.push(res[i].data)
             }
-            console.log(re)
+            //console.log(re)
             return resolve(re)
         })
         .catch(e=>console.log(e))
@@ -42,7 +42,7 @@ var tinypnga = function(token,files)
                 reslist.push(res[i].data.output.url)
             }
             getBuf(token,reslist)
-            .then((res)=>{resolve (res)})
+            .then((res)=>{return resolve (res)})
         })
         .catch(e=>console.log(e));
     })
