@@ -33,4 +33,4 @@ An array contain your images' urls
 
 Promise!
 
-Type: 'Array [Buffer1, Buffer2,...]'
+Type: `Array [Buffer1, Buffer2,...]`
