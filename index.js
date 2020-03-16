@@ -49,4 +49,4 @@ var tinypnga = function(token,files)
 
 module.export= {tinypnga: tinypnga}
 
-tinypnga(secret.token, ['https://raw.githubusercontent.com/YuxuanWang-CHINA/MyImages/master/images/20200310223352.jpg', 'https://raw.githubusercontent.com/YuxuanWang-CHINA/MyImages/master/images/20200308140737.jpg'])
+//tinypnga(secret.token, ['https://raw.githubusercontent.com/YuxuanWang-CHINA/MyImages/master/images/20200310223352.jpg', 'https://raw.githubusercontent.com/YuxuanWang-CHINA/MyImages/master/images/20200308140737.jpg'])
