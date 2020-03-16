@@ -27,7 +27,7 @@ Your tinypng api token
 
 Type: `Array [String1, String2,...]`
 
-A array contain your images' urls
+An array contain your images' urls
 
 ## Return
 
