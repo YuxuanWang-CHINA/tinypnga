@@ -1,5 +1,5 @@
 const axios = require('axios')
-const secret = require('./secret')
+//const secret = require('./secret')
 
 function oneReq(token,aurl){
     return axios.post('https://api.tinify.com/shrink',{source: {url: aurl}},{auth: {username: 'api', password: token }})
